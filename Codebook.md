@@ -10,7 +10,7 @@ Averages | Numeric | Average of all measurements for this combination of Subject
 Since the entries under the **Measurement** variable may not always be clear, some additional specifics are provided here. These notes should be used to parse the meaning of a particular entry in the **Measurement** column.
 
 Measurement Chunk | Value | Description
---- | ---
+--- | --- | ---
 x... | t... | Represents a time domain signal measurement
 | f... | Represents a frequency domain signal measurement
 .yyyy... | .Body... | Measurement of force caused by body movement
