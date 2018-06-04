@@ -30,3 +30,11 @@ mean_std_data[,2] <- sapply(mean_std_data[,2],function(x) activity_labels[x,2])
 mean_std_vars[,2] <- gsub("\\(\\)","",mean_std_vars[,2])
 cnames <- c("Subject","Activity",mean_std_vars[,2])
 colnames(mean_std_data) <- cnames
+
+#Filtering down to only the averages
+msd_melt <- melt(mean_std_data,id = c("Subject","Activity"))
+msd_melt <- msd_melt %>%
+        mutate(new.factor = interaction(Subject,Activity,variable)) %>%
+        mutate(averages = ave(value,new.factor))
+msd_melt <- unique(msd_melt[,c(1,2,3,5,6)])
+msd_melt <- arrange(msd_melt[c(1:3,5)],Subject,Activity,variable)
