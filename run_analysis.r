@@ -35,7 +35,7 @@ colnames(mean_std_data) <- cnames
 #Filtering down to only the averages
 msd_melt <- melt(mean_std_data,id = c("Subject","Activity"))
 msd_melt <- ddply(msd_melt,.(Subject,Activity,variable),summarize,
-                  Averages = mean(value))
+                  Averages = mean(value)) #This step takes a little time
 colnames(msd_melt)[3] <- "Measurement" #Renaming 'variables' column
 
 #Write out the result to a .txt file
