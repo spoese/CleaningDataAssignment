@@ -11,16 +11,16 @@ Since the entries under the **Measurement** variable may not always be clear, so
 
 Measurement Chunk | Value | Description
 --- | --- | ---
-x... | t... | Represents a time domain signal measurement
+**x...** | t... | Represents a time domain signal measurement
 --> | f... | Represents a frequency domain signal measurement
-.yyyy... | .Body... | Measurement of force caused by body movement
+**.yyyy...** | .Body... | Measurement of force caused by body movement
 --> | .Gravity... | Measurement of force caused by gravity
-...zzz... | ...Acc... | Measurement taken by accelerometer
+**...zzz...** | ...Acc... | Measurement taken by accelerometer
 --> | ...Gyro... | Measurement taken by gyroscope
 ......nnn | ......Jerk | Measures jerk
 --> | ......Mag | Measures magnitude
-...-mmm(-...) | ...-mean(-...) | Mean of this type of measurement
+**...-mmm(-...)** | ...-mean(-...) | Mean of this type of measurement
 --> | ...-std(-...) | Standard deviation of this type of measurement
-...-d | ...-X | Measurement in x direction
+**...-d** | ...-X | Measurement in x direction
 --> | ...-Y | Measurement in y direction
 --> | ...-Z | Measurement in z direction

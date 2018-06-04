@@ -6,9 +6,9 @@ After an initial download and read-in of the data, we then combine the different
 
 ## Explanation of codebook
 
-Since the variables used follow a very formulaic method of naming, the codebook describes each component that may appear in the variable name and allows the user to put the pieces together to find the name of a particular variable.
+Since the variables used for the measurements follow a very formulaic method of naming, the codebook describes each component that may appear in the variable name and allows the user to put the pieces together to find the name of a particular measurement. The other variables are fairly self-explanatory.
 
-In order to read the dataset back in, feel free to use the following code:
+In order to read the dataset back into R, feel free to use the following code:
 
 ```
 data <- read.table(file_path, header = TRUE)
