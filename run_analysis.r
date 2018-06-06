@@ -1,3 +1,7 @@
+##Load libraries
+library(dplyr)
+library(reshape2)
+
 ##The following steps download the file, unzip the file, and read in the
 ##various data sets
 
